@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-18T12:11:24.575Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="t7kp1bD06OSmFL0Nc7eO" version="14.2.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-01-18T16:23:48.040Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="9ePgrA3SttiOBzH4mZY0" version="14.2.4" type="github" pages="4">
   <diagram id="ULfj5KLmVxFlEswApAER" name="Overview">
     <mxGraphModel dx="946" dy="646" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -32,8 +32,34 @@
         <mxCell id="bNAuRmj55r8sYFTlJgHi-2" value="&lt;font style=&quot;font-size: 36px&quot;&gt;Anatomy of an ML Algorithm&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="bNAuRmj55r8sYFTlJgHi-1">
           <mxGeometry x="375" y="26" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="bNAuRmj55r8sYFTlJgHi-3" value="&lt;ol style=&quot;font-size: 36px&quot;&gt;&lt;li&gt;&lt;b&gt;Loss Function&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Optimization Criterion&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Optimization Routine&lt;/b&gt;&lt;/li&gt;&lt;/ol&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="bNAuRmj55r8sYFTlJgHi-1">
-          <mxGeometry x="49" y="86" width="564" height="354" as="geometry" />
+        <mxCell id="bNAuRmj55r8sYFTlJgHi-3" value="&lt;ol style=&quot;font-size: 36px&quot;&gt;&lt;li&gt;&lt;b&gt;Loss Function - &lt;/b&gt;Squared Error Loss, Likelihood, Log-Likelihood&lt;/li&gt;&lt;li&gt;&lt;b&gt;Optimization Criterion - &lt;/b&gt;Cost Function, MSE&lt;/li&gt;&lt;li&gt;&lt;b&gt;Optimization Routine - &lt;/b&gt;Gradient Descent&lt;/li&gt;&lt;/ol&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="bNAuRmj55r8sYFTlJgHi-1">
+          <mxGeometry x="20" y="86" width="819" height="354" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="iCFl6A7WpBeucsHr39uu" name="Example">
+    <mxGraphModel dx="946" dy="646" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="1" shadow="0">
+      <root>
+        <mxCell id="KGHZM98poUtChthoUTiK-0" />
+        <mxCell id="KGHZM98poUtChthoUTiK-1" parent="KGHZM98poUtChthoUTiK-0" />
+        <mxCell id="KGHZM98poUtChthoUTiK-2" value="Linear Regression" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="KGHZM98poUtChthoUTiK-1">
+          <mxGeometry x="286" y="19" width="279" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KGHZM98poUtChthoUTiK-3" value="&lt;font style=&quot;font-size: 18px&quot;&gt;&lt;b&gt;Equation Model:&lt;/b&gt; $$f_{w,b}(x) = wx + b$$&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="KGHZM98poUtChthoUTiK-1">
+          <mxGeometry x="264" y="72" width="322" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="KGHZM98poUtChthoUTiK-4" value="&lt;font style=&quot;font-size: 18px&quot;&gt;&lt;b&gt;Loss Function:&lt;/b&gt; $$(f_{w,b}(x_i) - y_i)^2$$&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="KGHZM98poUtChthoUTiK-1">
+          <mxGeometry x="264" y="156" width="322" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="KGHZM98poUtChthoUTiK-5" value="&lt;font style=&quot;font-size: 18px&quot;&gt;&lt;b&gt;Gradient Descent (Optimization Routine):&lt;/b&gt; &lt;br&gt;1. Calculate Partial Derivatives&lt;br&gt;$$\frac{\partial l}{\partial w} = \frac{1}{N} \sum_{i=1}^{N} -2x_i(y_i - (wx_i + b))\\&lt;br&gt;\frac{\partial l}{\partial b} = \frac{1}{N} \sum_{i=1}^{N} -2(y_i - (wx_i + b))&lt;br&gt;$$&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="KGHZM98poUtChthoUTiK-1">
+          <mxGeometry x="219" y="413" width="412" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="KGHZM98poUtChthoUTiK-6" value="&lt;font style=&quot;font-size: 18px&quot;&gt;&lt;b&gt;Cost Function (Optimization Criterion):&lt;/b&gt; $$\frac{1}{N} \sum_{i...N}(f_{w,b}(x_i) - y_i)^2&lt;br&gt;$$&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="KGHZM98poUtChthoUTiK-1">
+          <mxGeometry x="250" y="255" width="351" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="KGHZM98poUtChthoUTiK-8" value="&lt;font style=&quot;font-size: 18px&quot;&gt;2. Initialize and solve&lt;br&gt;$$w \leftarrow w - \alpha \frac{\partial l}{\partial w}\\&lt;br&gt;b \leftarrow b - \alpha \frac{\partial l}{\partial b}&lt;br&gt;$$&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="KGHZM98poUtChthoUTiK-1">
+          <mxGeometry x="264" y="602" width="322" height="96" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
